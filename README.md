@@ -2,13 +2,25 @@
 
 ---
 
+## Table of Contents
+* [Scenario](#scenario)
+* [Tools and Technologies Utilized](#tools-and-technologies-utilized)
+* [Step 1: Identify Abnormal Failed Network Connections](#step-1-identify-abnormal-failed-network-connections)
+* [Step 2: Analyze Recent Failed Connection Activity](#step-2-analyze-recent-failed-connection-activity)
+* [Step 3: Identify the Initiating Process](#step-3-identify-the-initiating-process)
+* [Containment and Response](#containment-and-response)
+* [MITRE ATT&CK Mapping](#mitre-attck-mapping)
+* [Outcome](#outcome)
+
+---
+
 ## Scenario
 
 A threat hunt was initiated following reports of significant network performance degradation. Distributed Denial-of-Service (DDoS) activity was ruled out, leading to the hypothesis that a host within the environment may have been engaging in excessive downloads or unauthorized network scanning.
 
 ---
 
-## Tools & Technologies Utilized
+## Tools and Technologies Utilized
 
 - Microsoft Defender for Endpoint (MDE) / Endpoint Detection & Response (EDR)
 - Kusto Query Language (KQL)
@@ -157,7 +169,7 @@ This activity was determined to be suspicious due to:
 
 ---
 
-## Containment & Response
+## Containment and Response
 
 The affected host, **`windows-target-1`**, was immediately isolated to prevent further activity.
 
