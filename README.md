@@ -34,6 +34,8 @@ DeviceNetworkEvents
 
 ### Findings
 
+<img width="850" alt="image" src="Screenshot 2026-05-29 185556.png">
+
 The query identified **1,799 failed connection attempts** associated with the local IP address:
 
 `10.0.0.155`
@@ -62,6 +64,8 @@ DeviceNetworkEvents
 ### Findings
 
 Analysis of the failed connections revealed a large number of **sequential connection attempts across numerous uncommon destination ports in rapid succession**.
+
+<img width="850" alt="image" src="Screenshot 2026-05-29 210809.png">
 
 This behavior is highly suspicious and aligns with indicators commonly associated with **unauthorized port scanning activity**. Legitimate services generally communicate using predictable, consistent ports, whereas the observed activity demonstrated broad and rapid probing behavior.
 
@@ -114,6 +118,8 @@ DeviceProcessEvents
 
 ### Findings
 
+<img width="850" alt="image" src="Screenshot 2026-05-29 214632.png">
+
 The expanded search identified a suspicious PowerShell execution event:
 
 ```text
@@ -132,6 +138,8 @@ To determine the account responsible for launching the script, the query was upd
 ```
 
 ### Findings
+
+<img width="850" alt="image" src="Screenshot 2026-05-29 220055.png">
 
 The script execution was attributed to the:
 
