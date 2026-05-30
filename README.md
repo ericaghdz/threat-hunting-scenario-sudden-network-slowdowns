@@ -31,6 +31,7 @@ DeviceNetworkEvents
 | summarize ConnectionCount = count() by DeviceName, ActionType, LocalIP
 | order by ConnectionCount desc
 ```
+> **Important Note:** Microsoft Defender truncates `DeviceName` values after 15 characters. Due to this limitation, the queries I used targeted `windows-target-` rather than the full hostname `windows-target-1`.
 
 ### Findings
 
